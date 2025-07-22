@@ -1,25 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
+    <title>Sheetal Kumar - Portfolio</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body>
-    <div id="header"> </div>
-    <div class="container">  
-        <nav>
-            <img src="images/logo.png" alt="images">
-        </nav>
-    </div>
-    <ul>
-        <li> <a href="#">Home</a> </li>
-        <li> <a href="#">About</a> </li>
-        <li> <a href="#">Services</a> </li>
-        <li> <a href="#">Portfolio</a> </li>
-        <li> <a href="#">Contact</a> </li>
 
-    </ul>
+<body>
+    <header class="header">
+        <a href="#home" class="logo">Sheetal Kumar</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar" id="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="home" data-aos="fade-up">
+        <div class="content">
+            <h1>Hi, I'm Sheetal Kumar</h1>
+            <p>Business Analyst | Data Engineer | Cloud Enthusiast</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <section id="about" class="about" data-aos="fade-up">
+        <h2>About Me</h2>
+        <p>Results-driven Business Analyst with hands-on experience building cloud-native data systems and scalable ETL pipelines. Proficient in classification models, data pre-processing, and exploratory analysis to derive actionable insights from real-world datasets.</p>
+    </section>
+
+    <section id="experience" class="experience" data-aos="fade-up">
+        <h2>Experience</h2>
+        <h3>Database Specialist, Thunderbird School Of Management</h3>
+        <p>Tempe, AZ | Nov 2024 – July 2025</p>
+        <ul>
+            <li>Designed and optimized cloud-based databases with AWS RDS and DynamoDB</li>
+            <li>Built ETL pipelines with SQL and Python</li>
+            <li>Created REST APIs for monitoring using AWS CloudWatch</li>
+            <li>Automated deployment with GitLab CI/CD</li>
+            <li>Collaborated with BI teams to improve ingestion workflows and dashboard design</li>
+        </ul>
+        <h3>Business Analyst, Nviera Technologies Pvt Ltd</h3>
+        <p>Bangalore, India | Aug 2021 – July 2023</p>
+        <ul>
+            <li>Evaluated microservice deployment pipelines and optimized release cycles</li>
+            <li>Led functional analysis and built dashboards in Tableau</li>
+            <li>Reduced time-to-production by integrating ML model logic with API wrappers</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="projects" data-aos="fade-up">
+        <h2>Projects</h2>
+        <h3>Netflix SQL Project</h3>
+        <ul>
+            <li>Performed exploratory analysis using PostgreSQL</li>
+            <li>Wrote 15+ complex queries with CTEs, JOINs, and CASE functions</li>
+            <li>Uncovered patterns in content, genres, and ratings</li>
+        </ul>
+        <h3>Job Scraping – Unveiling Employment Opportunities</h3>
+        <ul>
+            <li>Cleaned data and encoded features using pandas</li>
+            <li>Used KNN and Decision Tree models for classification</li>
+            <li>Achieved 85% accuracy predicting experience levels</li>
+        </ul>
+    </section>
+
+    <section id="skills" class="skills" data-aos="fade-up">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Languages:</strong> SQL, T-SQL, Python, Java, C++, HTML, CSS, React JS, TypeScript</li>
+            <li><strong>Data & Reporting:</strong> Tableau, QuickSight, Excel, Power BI, Lucidchart, Pandas, NumPy</li>
+            <li><strong>Cloud & DevOps:</strong> AWS (RDS, Lambda, EC2, DynamoDB, ECS, IAM, EKS, S3, Glue), ETL</li>
+            <li><strong>Databases:</strong> MongoDB, MySQL, Oracle, OrientDB, PostgreSQL</li>
+            <li><strong>Tools:</strong> Hadoop, Agile, Jira, GitLab, Git, GitHub, Selenium, Postman</li>
+        </ul>
+    </section>
+
+    <section id="education" class="education" data-aos="fade-up">
+        <h2>Education</h2>
+        <p><strong>Arizona State University</strong> — Master’s in Information Technology (GPA: 3.5) | Aug 2023 – May 2025</p>
+        <p><strong>Jain University</strong> — Bachelor’s in Technology (GPA: 3.2) | Aug 2017 – July 2021</p>
+    </section>
+
+    <section id="certifications" class="certifications" data-aos="fade-up">
+        <h2>Certifications</h2>
+        <ul>
+            <li>AWS Academy Data Engineering – Nov 2024</li>
+            <li>Excel for Business Analysts – Dec 2023</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact" data-aos="fade-up">
+        <h2>Contact Me</h2>
+        <form action="#">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <p>Email: <a href="mailto:sheetalkmr1418@gmail.com">sheetalkmr1418@gmail.com</a></p>
+        <p>Phone: <a href="tel:+14804981047">+1 (480) 498-1047</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/sheetalkumar1418">linkedin.com/in/sheetalkumar1418</a></p>
+        <p>GitHub: <a href="https://github.com/Skmr1418/My-Project">github.com/Skmr1418/My-Project</a></p>
+        <a href="Sheetal_Kumar_Resume.pdf" download class="btn">Download My Resume</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sheetal Kumar. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      document.getElementById('menu-icon').onclick = function () {
+        const nav = document.getElementById('navbar');
+        nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+      };
+    </script>
 </body>
+
 </html>
